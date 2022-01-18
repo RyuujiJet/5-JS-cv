@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会动的简历</title>
+</head>
+<body>
+    <div id="html"></div>
+    <style id="style"></style>
+    <div id="container">
+        <div id="square"></div>
+    </div>
+    <style>*{ margin: 0; padding: 0; box-sizing: border-box; }
+        #square {
+            position: fixed;
+            right: 50px;
+            top: 50px;
+        }
+        #html {
+            word-break: break-all;
+        }
+        @media(max-width: 500px) {
+            #html {
+                height: 50vh;
+                overflow: hidden;
+            }
+            #container {
+                height: 50vh;
+            }
+            #square {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                top: 25%;
+                left: 20%;
+            }
+            #square::before {
+                width: 100px;
+                height: 100px;
+            }
+            #square::after {
+                width: 100px;
+                height: 100px;
+            }
+        }</style>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+</html>
